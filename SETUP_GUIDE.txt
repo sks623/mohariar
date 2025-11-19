@@ -66,39 +66,20 @@ This will install all required Python packages:
 ⏱️ This may take 2-5 minutes depending on your internet speed.
 
 ===============================================================================
-STEP 4: INSTALL CHROME WEBDRIVER
+STEP 4: CHROME WEBDRIVER (AUTOMATIC - NO ACTION NEEDED!)
 ===============================================================================
 
-Option A: AUTOMATIC INSTALLATION (Recommended)
------------------------------------------------
+✓ ChromeDriver is automatically downloaded and managed by the application!
 
-Run this Python command:
+When you run the application for the first time:
+- It will automatically detect your Chrome browser version
+- Download the matching ChromeDriver
+- Set it up correctly
+- You'll see: "🔧 Setting up ChromeDriver (auto-download)..." in the app
 
---- COPY FROM BELOW ---
+⚠️ IMPORTANT: Just make sure Google Chrome browser is installed!
 
-pip install webdriver-manager
-
---- COPY UNTIL ABOVE ---
-
-Then the application will auto-download the correct ChromeDriver when you first run it.
-
-
-Option B: MANUAL INSTALLATION
-------------------------------
-
-1. Check your Chrome version:
-   - Open Chrome → Click 3 dots → Help → About Google Chrome
-   - Note the version (e.g., 119.0.6045.105)
-
-2. Download matching ChromeDriver:
-   - Go to: https://chromedriver.chromium.org/downloads
-   - Download the version matching your Chrome
-   - Extract chromedriver.exe
-
-3. Place chromedriver.exe in:
-   C:\Windows\System32\
-   OR
-   In the same folder as marvel_ri_automation.py
+NO MANUAL CHROMEDRIVER INSTALLATION REQUIRED!
 
 ===============================================================================
 STEP 5: RUN THE APPLICATION
@@ -170,14 +151,10 @@ python -m pip install -r requirements.txt
 Problem 3: Chrome Driver Error
 -------------------------------
 Solution:
-- Make sure Chrome browser is installed
-- Install webdriver-manager:
-
---- COPY FROM BELOW ---
-
-pip install webdriver-manager
-
---- COPY UNTIL ABOVE ---
+- Make sure Google Chrome browser is installed
+- ChromeDriver is automatically downloaded on first run
+- If still having issues, check your internet connection
+- The app needs internet to download ChromeDriver on first run
 
 
 Problem 4: Module Not Found Error
@@ -187,7 +164,7 @@ Solution:
 
 --- COPY FROM BELOW ---
 
-pip install customtkinter selenium pandas openpyxl PyPDF2 pyautogui comtypes win10toast pillow
+pip install customtkinter selenium pandas openpyxl PyPDF2 pyautogui comtypes win10toast pillow webdriver-manager
 
 --- COPY UNTIL ABOVE ---
 
@@ -214,7 +191,6 @@ cd Desktop
 git clone https://github.com/sks623/mohariar.git
 cd mohariar
 pip install -r requirements.txt
-pip install webdriver-manager
 python marvel_ri_automation.py
 
 --- COPY UNTIL ABOVE ---
