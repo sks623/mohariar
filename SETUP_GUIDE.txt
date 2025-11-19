@@ -1,0 +1,378 @@
+===============================================================================
+   MOHARIAR - RI AUTOMATION SYSTEM
+   SETUP GUIDE FOR NEW COMPUTER
+   Copy-Paste Ready Commands
+===============================================================================
+
+REPOSITORY: https://github.com/sks623/mohariar
+AUTHOR: sks623
+VERSION: 2.0
+
+===============================================================================
+STEP 1: INSTALL PREREQUISITES
+===============================================================================
+
+You need the following installed on your computer:
+
+1. Python 3.7 or higher
+   Download from: https://www.python.org/downloads/
+   ⚠️ IMPORTANT: Check "Add Python to PATH" during installation
+
+2. Google Chrome Browser
+   Download from: https://www.google.com/chrome/
+
+3. Git (for cloning repository)
+   Download from: https://git-scm.com/downloads
+
+===============================================================================
+STEP 2: CLONE THE REPOSITORY
+===============================================================================
+
+Open Command Prompt (CMD) or PowerShell and run:
+
+--- COPY FROM BELOW ---
+
+cd Desktop
+git clone https://github.com/sks623/mohariar.git
+cd mohariar
+
+--- COPY UNTIL ABOVE ---
+
+This will create a folder "mohariar" on your Desktop with all files.
+
+===============================================================================
+STEP 3: INSTALL PYTHON DEPENDENCIES
+===============================================================================
+
+Stay in the same Command Prompt window and run:
+
+--- COPY FROM BELOW ---
+
+pip install -r requirements.txt
+
+--- COPY UNTIL ABOVE ---
+
+This will install all required Python packages:
+- customtkinter (GUI framework)
+- selenium (web automation)
+- pandas (Excel handling)
+- openpyxl (Excel read/write)
+- PyPDF2 (PDF merging)
+- pyautogui (automation)
+- comtypes (Office automation)
+- win10toast (notifications)
+- pillow (image support)
+
+⏱️ This may take 2-5 minutes depending on your internet speed.
+
+===============================================================================
+STEP 4: INSTALL CHROME WEBDRIVER
+===============================================================================
+
+Option A: AUTOMATIC INSTALLATION (Recommended)
+-----------------------------------------------
+
+Run this Python command:
+
+--- COPY FROM BELOW ---
+
+pip install webdriver-manager
+
+--- COPY UNTIL ABOVE ---
+
+Then the application will auto-download the correct ChromeDriver when you first run it.
+
+
+Option B: MANUAL INSTALLATION
+------------------------------
+
+1. Check your Chrome version:
+   - Open Chrome → Click 3 dots → Help → About Google Chrome
+   - Note the version (e.g., 119.0.6045.105)
+
+2. Download matching ChromeDriver:
+   - Go to: https://chromedriver.chromium.org/downloads
+   - Download the version matching your Chrome
+   - Extract chromedriver.exe
+
+3. Place chromedriver.exe in:
+   C:\Windows\System32\
+   OR
+   In the same folder as marvel_ri_automation.py
+
+===============================================================================
+STEP 5: RUN THE APPLICATION
+===============================================================================
+
+Method 1: Using Python Command
+-------------------------------
+
+--- COPY FROM BELOW ---
+
+python marvel_ri_automation.py
+
+--- COPY UNTIL ABOVE ---
+
+
+Method 2: Using Batch File (Windows)
+-------------------------------------
+
+--- COPY FROM BELOW ---
+
+run.bat
+
+--- COPY UNTIL ABOVE ---
+
+
+Method 3: Double-Click
+----------------------
+
+Simply double-click on "run.bat" file in the mohariar folder.
+
+===============================================================================
+STEP 6: FIRST TIME SETUP
+===============================================================================
+
+When you first run the application:
+
+1. The MOHARIAR GUI will open
+2. Enter default mobile number (10 digits)
+3. Click "Initialize System"
+4. Browser will open automatically
+5. Log in to the Odisha Land Revenue portal manually (captcha)
+6. System will extract villages automatically
+
+===============================================================================
+TROUBLESHOOTING
+===============================================================================
+
+Problem 1: "Python is not recognized"
+--------------------------------------
+Solution:
+- Reinstall Python and check "Add Python to PATH"
+- OR manually add Python to PATH:
+  1. Search "Environment Variables" in Windows
+  2. Edit "Path" variable
+  3. Add: C:\Users\YourName\AppData\Local\Programs\Python\Python3X\
+
+
+Problem 2: "pip is not recognized"
+-----------------------------------
+Solution:
+
+--- COPY FROM BELOW ---
+
+python -m pip install -r requirements.txt
+
+--- COPY UNTIL ABOVE ---
+
+
+Problem 3: Chrome Driver Error
+-------------------------------
+Solution:
+- Make sure Chrome browser is installed
+- Install webdriver-manager:
+
+--- COPY FROM BELOW ---
+
+pip install webdriver-manager
+
+--- COPY UNTIL ABOVE ---
+
+
+Problem 4: Module Not Found Error
+----------------------------------
+Solution:
+- Install missing module manually:
+
+--- COPY FROM BELOW ---
+
+pip install customtkinter selenium pandas openpyxl PyPDF2 pyautogui comtypes win10toast pillow
+
+--- COPY UNTIL ABOVE ---
+
+
+Problem 5: "SSL Certificate Error"
+-----------------------------------
+Solution:
+
+--- COPY FROM BELOW ---
+
+pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org -r requirements.txt
+
+--- COPY UNTIL ABOVE ---
+
+===============================================================================
+COMPLETE SETUP IN ONE GO (ADVANCED)
+===============================================================================
+
+If you want to run all setup commands at once, copy this entire block:
+
+--- COPY FROM BELOW ---
+
+cd Desktop
+git clone https://github.com/sks623/mohariar.git
+cd mohariar
+pip install -r requirements.txt
+pip install webdriver-manager
+python marvel_ri_automation.py
+
+--- COPY UNTIL ABOVE ---
+
+===============================================================================
+ALTERNATIVE: DOWNLOAD WITHOUT GIT
+===============================================================================
+
+If you don't want to install Git:
+
+1. Go to: https://github.com/sks623/mohariar
+2. Click green "Code" button
+3. Click "Download ZIP"
+4. Extract the ZIP file to Desktop
+5. Open Command Prompt in that folder
+6. Run: pip install -r requirements.txt
+7. Run: python marvel_ri_automation.py
+
+===============================================================================
+USING THE WINDOWS EXECUTABLE (NO PYTHON NEEDED)
+===============================================================================
+
+If you download MOHARIAR.exe from GitHub Releases:
+
+1. Go to: https://github.com/sks623/mohariar/releases
+2. Download MOHARIAR.exe (latest release)
+3. Double-click MOHARIAR.exe to run
+4. No Python installation needed!
+5. No dependency installation needed!
+
+⚠️ Windows may show "Windows protected your PC" warning:
+   - Click "More info"
+   - Click "Run anyway"
+   - This is normal for unsigned executables
+
+===============================================================================
+FOLDER STRUCTURE AFTER SETUP
+===============================================================================
+
+mohariar/
+├── marvel_ri_automation.py     ← Main application (RUN THIS)
+├── requirements.txt             ← Dependencies list
+├── run.bat                      ← Windows launcher
+├── README.md                    ← User guide
+├── DOCUMENTATION.md             ← Technical documentation
+├── QUICKSTART.md                ← Quick start guide
+├── LICENSE                      ← MIT License
+├── welcome.wav                  ← Welcome sound
+├── completion.wav               ← Completion sound
+└── MOHARIAR_Guide.pptx          ← User manual (PowerPoint)
+
+Generated during use:
+├── rr20251119_1430/             ← Session PDF folders
+├── RI_Results_YYYYMMDD.xlsx     ← Exported results
+└── error_log.txt                ← Error logs
+
+===============================================================================
+QUICK START COMMANDS SUMMARY
+===============================================================================
+
+FOR WINDOWS:
+
+1. Install Python 3.7+ (with "Add to PATH" checked)
+2. Install Google Chrome
+3. Open Command Prompt and run:
+
+cd Desktop
+git clone https://github.com/sks623/mohariar.git
+cd mohariar
+pip install -r requirements.txt
+python marvel_ri_automation.py
+
+
+FOR LINUX/MAC:
+
+1. Install Python 3.7+ and Git (if not already installed)
+2. Install Google Chrome
+3. Open Terminal and run:
+
+cd ~/Desktop
+git clone https://github.com/sks623/mohariar.git
+cd mohariar
+pip3 install -r requirements.txt
+python3 marvel_ri_automation.py
+
+===============================================================================
+UPDATING THE APPLICATION
+===============================================================================
+
+To get the latest version from GitHub:
+
+--- COPY FROM BELOW ---
+
+cd Desktop\mohariar
+git pull origin main
+pip install -r requirements.txt
+
+--- COPY UNTIL ABOVE ---
+
+This will download any updates and install new dependencies.
+
+===============================================================================
+SYSTEM REQUIREMENTS
+===============================================================================
+
+Minimum:
+- Windows 7/10/11, macOS 10.12+, or Linux
+- Python 3.7 or higher
+- 4 GB RAM
+- 500 MB free disk space
+- Google Chrome browser
+- Internet connection
+
+Recommended:
+- Windows 10/11
+- Python 3.9+
+- 8 GB RAM
+- 1 GB free disk space
+- Stable internet connection (for portal access)
+
+===============================================================================
+SUPPORT & DOCUMENTATION
+===============================================================================
+
+- GitHub Repository: https://github.com/sks623/mohariar
+- Issues/Bug Reports: https://github.com/sks623/mohariar/issues
+- README.md: Complete user guide
+- DOCUMENTATION.md: Technical documentation
+- QUICKSTART.md: Simple getting started guide
+
+===============================================================================
+SECURITY NOTES
+===============================================================================
+
+✓ No credentials are stored locally
+✓ All data stays on your computer
+✓ Works on air-gapped networks (after installation)
+✓ Open source - you can review the code
+✓ Uses official Odisha Land Revenue portal only
+
+===============================================================================
+LICENSE
+===============================================================================
+
+MIT License - Free to use, modify, and distribute
+See LICENSE file for details
+
+===============================================================================
+CONTACT
+===============================================================================
+
+Repository Owner: sks623
+GitHub: https://github.com/sks623
+Project: https://github.com/sks623/mohariar
+
+===============================================================================
+
+Last Updated: November 2025
+Version: 2.0
+
+===============================================================================
