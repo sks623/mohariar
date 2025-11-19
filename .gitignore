@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.spec
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Application-specific - Sensitive Data
+credentials.enc
+error_log.txt
+session_history.json
+
+# Session folders (PDF outputs)
+rr*/
+
+# Excel outputs
+RI_Results_*.xlsx
+Khata_Template.xlsx
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Chrome Driver (download separately)
+chromedriver.exe
+chromedriver
+
+# Generated files (keep source)
+MOHARIAR_Guide.pdf
+
+# Screenshots (optional - remove if you want to include them)
+*.png
+*.jpg
+*.jpeg
