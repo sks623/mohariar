@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:odishalandrevenue.nic.in)",
+      "Bash(pip install:*)",
+      "Bash(python:*)",
+      "Bash(dir /B *.png *.jpg *.jpeg 2)",
+      "Bash(nul)",
+      "Bash(dir)",
+      "Bash(=41.0.0)",
+      "WebSearch",
+      "Bash(.gitignore)",
+      "Bash(dir /B *.wav 2)",
+      "Bash(pyinstaller:*)",
+      "Bash(dir:*)",
+      "Bash(del distMOHARIAR.exe)",
+      "Bash(rm:*)",
+      "Bash(=4.0.0)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git config:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(git rm:*)",
+      "Bash(git mv:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

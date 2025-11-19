@@ -90,7 +90,7 @@ Method 1: Using Python Command
 
 --- COPY FROM BELOW ---
 
-python marvel_ri_automation.py
+python MOHARIAR.py
 
 --- COPY UNTIL ABOVE ---
 
@@ -191,7 +191,7 @@ cd Desktop
 git clone https://github.com/sks623/mohariar.git
 cd mohariar
 pip install -r requirements.txt
-python marvel_ri_automation.py
+python MOHARIAR.py
 
 --- COPY UNTIL ABOVE ---
 
@@ -207,7 +207,7 @@ If you don't want to install Git:
 4. Extract the ZIP file to Desktop
 5. Open Command Prompt in that folder
 6. Run: pip install -r requirements.txt
-7. Run: python marvel_ri_automation.py
+7. Run: python MOHARIAR.py
 
 ===============================================================================
 USING THE WINDOWS EXECUTABLE (NO PYTHON NEEDED)
@@ -231,7 +231,7 @@ FOLDER STRUCTURE AFTER SETUP
 ===============================================================================
 
 mohariar/
-├── marvel_ri_automation.py     ← Main application (RUN THIS)
+├── MOHARIAR.py     ← Main application (RUN THIS)
 ├── requirements.txt             ← Dependencies list
 ├── run.bat                      ← Windows launcher
 ├── README.md                    ← User guide
@@ -261,7 +261,7 @@ cd Desktop
 git clone https://github.com/sks623/mohariar.git
 cd mohariar
 pip install -r requirements.txt
-python marvel_ri_automation.py
+python MOHARIAR.py
 
 
 FOR LINUX/MAC:
@@ -274,7 +274,7 @@ cd ~/Desktop
 git clone https://github.com/sks623/mohariar.git
 cd mohariar
 pip3 install -r requirements.txt
-python3 marvel_ri_automation.py
+python3 MOHARIAR.py
 
 ===============================================================================
 UPDATING THE APPLICATION

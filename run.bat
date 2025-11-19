@@ -1,9 +1,9 @@
 @echo off
 echo ========================================
-echo RI AUTOMATION SYSTEM - MARVEL EDITION
+echo MOHARIAR - RI AUTOMATION SYSTEM
 echo ========================================
 echo.
 echo Starting system...
 echo.
-python marvel_ri_automation.py
+python MOHARIAR.py
 pause

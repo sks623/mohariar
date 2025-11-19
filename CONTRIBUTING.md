@@ -137,7 +137,7 @@ git remote add upstream https://github.com/ORIGINAL_OWNER/ri-automation.git
 pip install -r requirements.txt
 
 # Test the application
-python marvel_ri_automation.py
+python MOHARIAR.py
 ```
 
 ### Branch Strategy
@@ -309,7 +309,7 @@ Fixed bug  # Which bug? No details
    ```bash
    # Optional: Run formatter
    pip install black
-   black marvel_ri_automation.py
+   black MOHARIAR.py
    ```
 
 ### Submitting PR

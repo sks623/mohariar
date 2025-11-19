@@ -259,7 +259,7 @@ self.saved_pdfs = [
 
 ```
 project rr/
-├── marvel_ri_automation.py       ← Main application (~1220 lines)
+├── MOHARIAR.py       ← Main application (~1220 lines)
 ├── requirements.txt              ← Complete dependencies (7 packages)
 ├── README.md                     ← Comprehensive user guide
 ├── CHANGELOG.md                  ← Version history
@@ -898,7 +898,7 @@ def add_result(message, status="info"):
 ```
 "I'm working on the Odisha RI Automation project.
 Current version: 1.0 (Marvel-themed GUI).
-Files: marvel_ri_automation.py, requirements.txt
+Files: MOHARIAR.py, requirements.txt
 Read CLAUDE.md for full context.
 I want to implement [specific feature from V2.0 list]."
 ```
@@ -972,7 +972,7 @@ docs: Update CLAUDE.md with V2.0 plans
 ## 📧 PROJECT HANDOFF CHECKLIST
 
 When sharing with another developer:
-- [ ] Share `marvel_ri_automation.py`
+- [ ] Share `MOHARIAR.py`
 - [ ] Share `requirements.txt`
 - [ ] Share `QUICKSTART.md`
 - [ ] Share `CLAUDE.md`

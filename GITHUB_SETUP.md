@@ -4,7 +4,7 @@ Complete guide for uploading MOHARIAR to GitHub and enabling others to download 
 
 ---
 
-## =Ë Prerequisites
+## =ï¿½ Prerequisites
 
 - GitHub account: https://github.com/signup
 - Git installed on your computer
@@ -17,12 +17,12 @@ Complete guide for uploading MOHARIAR to GitHub and enabling others to download 
 
 ---
 
-## =€ Quick Upload Steps
+## =ï¿½ Quick Upload Steps
 
 ### 1. Create GitHub Repository
 
 1. Login to GitHub
-2. Click **"+"** ’ **"New repository"**
+2. Click **"+"** ï¿½ **"New repository"**
 3. Name: `mohariar-ri-automation`
 4. Description: "Automated RI Collection Entry for Odisha Land Revenue"
 5. **Public** (recommended)
@@ -56,12 +56,12 @@ Replace `YOUR_USERNAME` and `REPO_NAME` with your actual GitHub username and rep
 
 ---
 
-## =æ Essential Files
+## =ï¿½ Essential Files
 
 Make sure these are in your folder:
 
 ### Must Have
-- [x] `marvel_ri_automation.py`
+- [x] `MOHARIAR.py`
 - [x] `requirements.txt`
 - [x] `README.md`
 - [x] `INSTALLATION.md`
@@ -78,14 +78,14 @@ Make sure these are in your folder:
 
 ---
 
-## < Creating Releases
+## <ï¿½ Creating Releases
 
 Releases let users download specific versions easily.
 
 ### Steps:
 
 1. Go to your repository
-2. Click **"Releases"** ’ **"Create a new release"**
+2. Click **"Releases"** ï¿½ **"Create a new release"**
 3. **Tag**: `v2.0.0`
 4. **Title**: `MOHARIAR v2.0.0 - Full System`
 5. **Description**:
@@ -123,7 +123,7 @@ Releases let users download specific versions easily.
 Share link: `https://github.com/YOUR_USERNAME/REPO_NAME`
 
 They can:
-1. Click **"Code"** ’ **"Download ZIP"**
+1. Click **"Code"** ï¿½ **"Download ZIP"**
 2. Extract
 3. Follow INSTALLATION.md
 
@@ -159,7 +159,7 @@ Already in .gitignore:
 
 ---
 
-##   Troubleshooting
+## ï¿½ Troubleshooting
 
 **"Permission denied"**
 - Use HTTPS URL: `https://github.com/...`
@@ -186,6 +186,6 @@ Already in .gitignore:
 
 ---
 
-**Your project is now on GitHub!** <‰
+**Your project is now on GitHub!** <ï¿½
 
-*Made with ¡ by SUSHANT*
+*Made with ï¿½ by SUSHANT*

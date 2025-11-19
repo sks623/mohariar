@@ -22,7 +22,7 @@
 ## ▶ HOW TO RUN
 
 ```bash
-python marvel_ri_automation.py
+python MOHARIAR.py
 ```
 
 ---
@@ -128,11 +128,11 @@ pip install -r requirements.txt
 
 ### To use on another computer:
 1. Copy these 2 files:
-   - `marvel_ri_automation.py`
+   - `MOHARIAR.py`
    - `requirements.txt`
 2. Install Python on new computer
 3. Run: `pip install -r requirements.txt`
-4. Run: `python marvel_ri_automation.py`
+4. Run: `python MOHARIAR.py`
 
 ---
 

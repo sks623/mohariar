@@ -127,7 +127,7 @@ pip install -r requirements.txt
 
 ### Step 4: Verify Installation
 ```bash
-python marvel_ri_automation.py
+python MOHARIAR.py
 ```
 
 ---
@@ -138,7 +138,7 @@ python marvel_ri_automation.py
 
 1. **Launch Application**
    ```bash
-   python marvel_ri_automation.py
+   python MOHARIAR.py
    ```
    Or double-click `run.bat` (if available)
 
@@ -230,7 +230,7 @@ rr20251114_1430/               ← Session folder
 
 ### Customizing Settings
 
-Edit `marvel_ri_automation.py` to customize:
+Edit `MOHARIAR.py` to customize:
 
 **Mobile Number Validation:**
 ```python
