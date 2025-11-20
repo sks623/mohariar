@@ -56,3 +56,18 @@ MOHARIAR_Guide.pdf
 *.png
 *.jpg
 *.jpeg
+
+# Claude AI settings (local only)
+.claude/settings.local.json
+
+# Old/deprecated versions
+*automation*.py
+*ri_*.py
+odisha_*.py
+find_*.py
+inspect_*.py
+create_*.py
+
+# Junk files
+=*.*
+nul
